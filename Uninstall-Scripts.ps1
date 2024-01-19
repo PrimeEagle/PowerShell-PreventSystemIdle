@@ -46,6 +46,10 @@ Begin
 Process
 {	
 	Remove-PathFromProfile -PathVariable 'Path' -Path (Get-Location).Path
+	
+	Remove-AliasFromProfile -Script 'Block-Idle' -Alias 'bi'
+	Remove-AliasFromProfile -Script 'Get-BlockIdleHelp' -Alias 'gbih'
+	Remove-AliasFromProfile -Script 'Get-BlockIdleHelp' -Alias 'bihelp'
 }
 
 End

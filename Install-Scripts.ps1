@@ -47,6 +47,10 @@ Process
 {	
 	Add-PathToProfile -PathVariable 'Path' -Path (Get-Location).Path
 	Add-PathToProfile -PathVariable 'PSModulePath' -Path $ModulesPath
+	
+	Add-AliasToProfile -Script 'Block-Idle' -Alias 'bi'
+	Add-AliasToProfile -Script 'Get-BlockIdleHelp' -Alias 'gbih'
+	Add-AliasToProfile -Script 'Get-BlockIdleHelp' -Alias 'bihelp'
 }
 
 End
