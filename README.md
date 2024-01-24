@@ -1,4 +1,4 @@
-# PowerShell-BlockIdle
+# PowerShell-PreventSystemIdle
 
 <img src="https://github.com/PrimeEagle/PowerShell-BlockIdle/blob/main/block%20idle.png?raw=true" width="250" />
 
