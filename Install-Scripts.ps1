@@ -48,9 +48,11 @@ Process
 	Add-PathToProfile -PathVariable 'Path' -Path (Get-Location).Path
 	Add-PathToProfile -PathVariable 'PSModulePath' -Path $ModulesPath
 	
-	Add-AliasToProfile -Script 'Block-Idle' -Alias 'bi'
-	Add-AliasToProfile -Script 'Get-BlockIdleHelp' -Alias 'gbih'
-	Add-AliasToProfile -Script 'Get-BlockIdleHelp' -Alias 'bihelp'
+	Add-AliasToProfile -Script 'Prevent-SystemIdle' -Alias 'psi'
+	Add-AliasToProfile -Script 'Get-PreventSystemIdleHelp' -Alias 'gpsih'
+	Add-AliasToProfile -Script 'Get-PreventSystemIdleHelp' -Alias 'psihelp'
+	Add-AliasToProfile -Script 'Get-PreventSystemIdleScriptVersion' -Alias 'gpsisv'
+	Add-AliasToProfile -Script 'Get-PreventSystemIdleScriptVersion' -Alias 'psiver'
 }
 
 End

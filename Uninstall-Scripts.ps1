@@ -47,9 +47,11 @@ Process
 {	
 	Remove-PathFromProfile -PathVariable 'Path' -Path (Get-Location).Path
 	
-	Remove-AliasFromProfile -Script 'Block-Idle' -Alias 'bi'
-	Remove-AliasFromProfile -Script 'Get-BlockIdleHelp' -Alias 'gbih'
-	Remove-AliasFromProfile -Script 'Get-BlockIdleHelp' -Alias 'bihelp'
+	Remove-AliasFromProfile -Script 'Prevent-SystemIdle' -Alias 'psi'
+	Remove-AliasFromProfile -Script 'Get-PreventSystemIdleHelp' -Alias 'gpsih'
+	Remove-AliasFromProfile -Script 'Get-PreventSystemIdleHelp' -Alias 'psihelp'
+	Remove-AliasFromProfile -Script 'Get-PreventSystemIdleScriptVersion' -Alias 'gpsisv'
+	Remove-AliasFromProfile -Script 'Get-PreventSystemIdleScriptVersion' -Alias 'psiver'
 }
 
 End
