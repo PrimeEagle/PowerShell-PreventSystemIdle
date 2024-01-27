@@ -43,7 +43,9 @@ Process
 		
 		$minutes = 720
 		$myshell = New-Object -com "Wscript.Shell"
-
+		
+		Write-Host "Preventing idling..."
+		
 		for ($i = 0; $i -lt $minutes; $i++) {
 		  Start-Sleep -Seconds 180
 		  $myshell.sendkeys("+")
